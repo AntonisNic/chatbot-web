@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Knowledge</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="custom.css">
+  <link rel="stylesheet" href="styling.css">
+ <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ <!-- <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>-->
+  <script type="text/babel" src="Main.js"></script>
+
+</head>
+
+
+<body>
+<div class="titlos">
+  <h1>the Ultimate Chatboy</h1>
+</div>
+
+
+<div class="loader">
+  <div class="inner one"></div>
+  <div class="inner two"></div>
+  <div class="inner three"></div>
+</div>
+
+<div id="tabs"></div>
+<br>
+
+<div id="textbox_space"></div>
+
+<div id="form_id">
+  <form action="/addquestion" method="GET">
+    <input id="questionID_id" name="questionID" type="text " placeholder="QuestionID" class="asking_form_c2" readonly>
+    <br>
+    <span title="Please enter up to 10 keywords, and separate them with commas, DONT USE SPACE"> <input id="keywords_id" name="keywords_string" type="text " placeholder="keyword1,keyword2..." class="asking_form_c2">
+    </span>
+    <br>
+    <input id="answer_id" name="answer" placeholder="Response"type="text " class="asking_form_c2">
+    <br><br>
+    <button type="submit" class="glow-on-hover">Add question</button>
+  </form>
+</div>
+
+<div id ="root_knowledge"></div>
+
+<script type="text/babel">
+
+
+  const nav_element =
+          <div>
+            <nav>
+              <a href="index2.html">Ask me!</a>
+              <a href="knowledge.html">Knowledge Base</a>
+              <a href="history.html"> History</a>
+              <a href="creator.html">Creator</a>
+              <div className="animation start-home"></div>
+            </nav>
+          </div>
+
+
+
+  ReactDOM.render(nav_element, document.getElementById("tabs"));
+</script>
+</body>
+</html>

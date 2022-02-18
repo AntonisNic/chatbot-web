@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Ask me, cutie</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+
+    <link rel="stylesheet" href="styling.css">
+    <!--<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+    <script type="text/babel" src="Index.js"></script>
+</head>
+
+
+<body>
+<div class="titlos">
+    <h1>the Ultimate Chatboy</h1>
+</div>
+
+
+
+<div class="loader">
+    <div class="inner one"></div>
+    <div class="inner two"></div>
+    <div class="inner three"></div>
+</div>
+
+<div id="tabs"></div>
+<br>
+<div id="mama_div"></div>
+<div id="asking"> </div>
+<div id="asking_form">
+
+<form action="/askquestion" method = "GET">
+    <input id="ask_id" name = "response_string" type ="text " class="asking_form_c" >
+    <br>
+    <button  type ="submit"  class="glow-on-hover" >Sumbit</button>
+</form>
+
+</div>
+<div id="index_root" > </div>
+
+<script>
+
+</script>
+<script type="text/babel">
+
+
+    const nav_element =
+        <div>
+            <nav>
+                <a href="index2.html">Ask me!</a>
+                <a href="knowledge.html">Knowledge Base</a>
+                <a href="history.html"> History</a>
+                <a href="creator.html">Creator</a>
+                <div className="animation start-home"></div>
+            </nav>
+        </div>
+    const ask_element = <h2 className="askingclass">Ask me a Question</h2>
+
+    ReactDOM.render(nav_element, document.getElementById("tabs"));
+    ReactDOM.render(ask_element, document.getElementById("asking"));
+</script>
+</body>
+</html>

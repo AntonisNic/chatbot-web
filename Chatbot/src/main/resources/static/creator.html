@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ask me, cutie</title>
+
+    <link rel="stylesheet" href="styling.css">
+    <!--<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+
+
+</head>
+
+
+<body>
+<div class="titlos">
+    <h1>the Ultimate Chatboy</h1>
+</div>
+<div class="subtitlos">
+    <h5>ver 1.01</h5>
+</div>
+
+
+<div class="loader">
+    <div class="inner one"></div>
+    <div class="inner two"></div>
+    <div class="inner three"></div>
+</div>
+
+<div id="tabs"></div>
+
+<img src="https://i.imgur.com/eFxq1nk.png" alt="BIG BOY" width="500" height="600" class="center">>
+<h3 class="instagram">@antonis_nic</h3>
+<br>
+<br>
+<script type="text/babel">
+
+
+    const nav_element =
+        <div>
+            <nav>
+                <a href="index2.html">Ask me!</a>
+                <a href="knowledge.html">Knowledge Base</a>
+                <a href="history.html"> History</a>
+                <a href="creator.html">Creator</a>
+                <div className="animation start-home"></div>
+            </nav>
+        </div>
+
+
+
+    ReactDOM.render(nav_element, document.getElementById("tabs"));
+</script>
+</body>
+</html>
